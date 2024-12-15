@@ -1,0 +1,60 @@
+---
+links:
+  - text: PROJECTS
+    url: /projects
+  - text: ABOUT
+    url: /about
+  - text: CONTACT
+    url: /contact
+icons:
+  - text: LinkedIn
+    url: https://www.linkedin.com/in/tashita-mukherji-1194318b
+    icon: /linkedin-logo.svg
+  - text: Instagram
+    url: https://www.instagram.com/tashitamukherji
+    icon: /instagram-logo.svg
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <meta name="description" value="{{ description }}">
+    <link rel="stylesheet" href="/global.css"/>
+  </head>
+  <body class="bg-[#171717] text-white selection:bg-white selection:text-[#171717]">
+    <section class="flex flex-row justify-between pt-12 container w-screen">
+      <div class="px-2">
+        <p>Tashita</p>
+      </div>
+      <ul class="hidden md:flex flex-row items-center">
+        {% for link in links %}
+          <li class="px-8">
+            <a href="{{ link.url }}">
+              {% if link.icon %}
+                <img src="{{ link.icon }}" alt="{{ link.text }}"/>
+              {% else %}
+                {{ link.text }}
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+        {% for icon in icons %}
+          <li class="px-1">
+            <a href="{{ icon.url }}">
+              <img src="{{ icon.icon }}" alt="{{ icon.text }}"/>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {{ content | safe }}
+    <footer class="flex flex-col-reverse md:flex-row items-center text-brand-300 selection:bg-brand-300 text-sm pt-12
+        md:justify-between px-2">
+      <p class="text-center py-2">COPYRIGHT 2024</p>
+      <p class="text-center py-2">SITE DESIGN BY TASHITA MUKHERJI & DEVELOPED BY ARVIND SURESH</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+---
+layout: layout/main-layout.njk
+title: Tashita Mukherji
+description: Portfolio of Tashita Mukherji
+mainTitle: A MULTI-DISCIPLINARY DESIGNER AND ILLUSTRATOR
+subtitle: <b>Tashita Mukherji</b> is a brand and product designer creating identities with beauty and brains for companies large and small.
+scrollNote: Scroll for projects on this website
+---
+
+<section class="h-screen container mx-auto flex flex-col text-brand-300 selection:bg-brand-300">
+  <section class="grow flex flex-col md:flex-row justify-evenly md:justify-between items-center">
+    <div class="px-2 md:w-4/5">
+      <p class="text-3xl md:text-7xl font-black text-center">
+        {{ mainTitle }}
+      </p>
+      <div class="flex flex-col md:flex-row justify-start">
+        <div class="px-12 mt-6">
+          <p class="text-md md:text-2xl text-center font-normal">
+            {{ subtitle | safe }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./shopping-bag.svg" class="hidden absolute -right-10 bottom-2 h-[55vh] w-[55vh]"/>
+    <div class="relative h-48 w-48">
+      <img src="./star.png" class="absolute h-48 w-48 animate-spin-slow"/>
+      <div class="text-white text-center absolute w-32 top-14 left-8 text-sm">
+        <p>{{ scrollNote }}</p>
+        <img src="./arrow.svg" class="mx-auto h-12"/>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 px-2">
+  <div class="bg-red-100 rounded-md h-[40vh]">
+    <a class="text-center text-white text-2xl" href="./projects/international-tennis-hall-of-fame">ITHF</a>
+  </div>
+  <div class="bg-red-200 rounded-md h-[40vh]"></div>
+  <div class="bg-red-300 rounded-md h-[40vh]"></div>
+  <div class="bg-red-400 rounded-md h-[40vh]"></div>
+  <div class="bg-red-100 rounded-md h-[40vh]"></div>
+  <div class="bg-red-200 rounded-md h-[40vh]"></div>
+  <div class="bg-red-300 rounded-md h-[40vh]"></div>
+  <div class="bg-red-400 rounded-md h-[40vh]"></div>
+</section>

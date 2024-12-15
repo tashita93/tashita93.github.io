@@ -1,0 +1,50 @@
+---
+layout: layout/main-layout.njk
+---
+
+<section class="container mx-auto flex flex-col">
+  <section class="flex flex-col md:flex-row justify-center md:justify-between items-center py-24">
+    <div class="px-2">
+      <p class="text-5xl md:text-6xl font-black text-center md:text-left">
+        {{ projectTitle }}
+      </p>
+      <div class="flex flex-col justify-start px-6 md:px-0 text-md md:text-xl text-center font-light md:text-left md:w-3/5">
+        <div class="flex flex-col justify-start mt-4">
+          {% for item in projectDescription %}
+            <div class=" mt-2">
+              <p>
+                {{ item }}
+              </p>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="flex flex-col md:flex-row justify-start mt-4">
+          <div class="mt-2">
+            <p class="italic">
+              Collaborators: {{ collaborators }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid grid-cols-12 gap-2 p-2">
+      {% for item in media %}
+        <div class="{{ item.classes }}">
+          <img src="{{ baseAssetsPath }}/{{ item.src }}" alt="{{ item.alt }}" class="w-full"/>
+        </div>
+      {% endfor %}
+    </section>
+    <section class="flex flex-row justify-center p-2">
+      <div class="px-2">
+        <a href="{{ previousPage }}">
+          <img src="/arrow-left.svg" alt="Previous" class="inline mx-4"/>PREVIOUS
+        </a>
+      </div>
+      <div class="px-4"></div>
+      <div class="px-2">
+        <a href="{{ nextPage }}">
+          NEXT<img src="/arrow-right.svg" alt="Next" class="inline mx-4"/>
+        </a>
+      </div>
+    </section>
+  </section>

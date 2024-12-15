@@ -1,0 +1,17 @@
+landingPage:
+  mainTitle: A MULTI-DISCIPLINARY DESIGNER AND ILLUSTRATOR
+  subtitle: <b>Tashita Mukherji</b> is a brand and product designer creating identities with beauty and brains for companies large and small.
+  scrollNote: Scroll for projects on this website
+socialLinks:
+  - text: PROJECTS
+    url: /projects
+  - text: ABOUT
+    url: /about
+  - text: CONTACT
+    url: /contact
+  - text: LinkedIn
+    url: https://www.linkedin.com/in/tashita-mukherji-1194318b
+    icon: ./linkedin-logo.svg
+  - text: Instagram
+    url: https://www.instagram.com/tashitamukherji
+    icon: ./instagram-logo.svg
