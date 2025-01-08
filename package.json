@@ -7,13 +7,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "tailwindcss -i ./_includes/css/global.css -o global.out.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./_includes/css/global.css -o global.out.css --minify"
+    "build": "rimraf _site && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./_includes/css/global.css -o global.out.css --minify"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.16"
   },
   "dependencies": {
