@@ -16,7 +16,7 @@ icons:
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class=" scroll-smooth">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,10 +24,12 @@ icons:
     <meta name="description" value="{{ description }}">
     <link rel="stylesheet" href="/global.css"/>
   </head>
-  <body class="bg-[#171717] text-white selection:bg-white selection:text-[#171717]">
-    <section class="flex flex-row justify-between pt-12 container w-screen">
+  <body class="bg-[#171717] text-brand-300 selection:bg-brand-300 selection:text-[#171717]">
+    <section class="flex flex-row justify-between pt-12 container w-screen mx-auto">
       <div class="px-2">
-        <p>Tashita</p>
+        <a href="/">
+          <img src="/logo.png" alt="Tashita Mukherji" class="h-12"/>
+        </a>
       </div>
       <ul class="hidden md:flex flex-row items-center">
         {% for link in links %}

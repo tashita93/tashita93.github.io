@@ -7,7 +7,7 @@ subtitle: <b>Tashita Mukherji</b> is a brand and product designer creating ident
 scrollNote: Scroll for projects on this website
 ---
 
-<section class="h-screen container mx-auto flex flex-col text-brand-300 selection:bg-brand-300">
+<section class="h-screen container mx-auto flex flex-col text-brand-300 selection:bg-brand-300 selection:text-[#1a1a1a]">
   <section class="grow flex flex-col md:flex-row justify-evenly md:justify-between items-center">
     <div class="px-2 md:w-4/5">
       <p class="text-3xl md:text-7xl font-black text-center">
@@ -22,7 +22,7 @@ scrollNote: Scroll for projects on this website
       </div>
     </div>
     <img src="./shopping-bag.svg" class="hidden absolute -right-10 bottom-2 h-[55vh] w-[55vh]"/>
-    <div class="relative h-48 w-48">
+    <a class="relative h-48 w-48 select-none" href="#projects">
       <img src="./star.png" class="absolute h-48 w-48 animate-spin-slow"/>
       <div class="text-white text-center absolute w-32 top-14 left-8 text-sm">
         <p>{{ scrollNote }}</p>
@@ -31,7 +31,7 @@ scrollNote: Scroll for projects on this website
     </div>
   </section>
 </section>
-<section class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 px-2">
+<section class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 p-2" id="projects">
   <div class="bg-red-100 rounded-md h-[40vh]">
     <a class="text-center text-white text-2xl" href="./projects/international-tennis-hall-of-fame">ITHF</a>
   </div>

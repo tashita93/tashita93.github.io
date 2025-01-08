@@ -1,3 +1,147 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Regular */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-Italic.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-BoldItalic.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Black */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-Black.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Black Italic */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-BlackItalic.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Heavy */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-Heavy.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Heavy Italic */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-HeavyItalic.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-LightItalic.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-MedIta.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Ultra Bold */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-UltraBold.woff2")
+    format("woff2");
+  font-weight: 950;
+  font-style: normal;
+}
+
+/* Ultra Bold Italic */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-UltBdIta.woff2")
+    format("woff2");
+  font-weight: 950;
+  font-style: italic;
+}
+
+/* Ultra Light */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-UltraLight.woff2")
+    format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Ultra Light Italic */
+@font-face {
+  font-family: "PowerGrotesk";
+  src: url("/fonts/PowerGroteskTrial-WOFF2/PowerGroteskTrial-UltLtIta.woff2")
+    format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
