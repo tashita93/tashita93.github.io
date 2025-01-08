@@ -17,8 +17,8 @@ export default async function (eleventyConfig) {
     "projectCard",
     function (url, title, imageName = null) {
       const imagePath = imageName
-        ? `./projects/${imageName}.png`
-        : `./projects/${title}.png`;
+        ? `./Projects/${imageName}.png`
+        : `./Projects/${title}.png`;
       return `
       <div class="relative bg-brand-900 rounded-md h-[40vh] overflow-hidden group">
         <a class="block w-full h-full" href="${url}">
