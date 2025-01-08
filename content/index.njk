@@ -32,34 +32,14 @@ scrollNote: Scroll for projects on this website
   </section>
 </section>
 <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 p-2" id="projects">
-  <div class="bg-red-100 rounded-md h-[40vh]">
-    <a class="text-center text-white text-2xl" href="./projects/international-tennis-hall-of-fame">ITHF</a>
-  </div>
-  <div class="bg-red-200 rounded-md h-[40vh]">
-    <a class="text-center text-white text-2xl" href="./projects/mecha-systems">Mecha Systems</a>
-  </div>
-  <div class="bg-red-300 rounded-md h-[40vh]">
-    <a class="text-center text-white text-2xl" href="./projects/logofolio">Logofolio</a>
-  </div>
-  <div class="bg-red-400 rounded-md h-[40vh]">
-    <a class="text-center text-white text-2xl" href="./projects/caicos-luxe">Caicos Luxe</a>
-  </div>
-  <div class="bg-red-100 rounded-md h-[40vh]">
-    <a class="text-center text-white text-2xl" href="./projects/smartstaff-branding">Smartstaff Branding</a>
-  </div>
-  <div class="bg-red-200 rounded-md h-[40vh]">
-    <a class="text-center text-white text-2xl" href="./projects/google-mumbai">Google Mumbai</a>
-  </div>
-  <div class="bg-red-300 rounded-md h-[40vh]">
-    <a class="text-center text-white text-2xl" href="./projects/metaverse-infosys">Metaverse Infosys</a>
-  </div>
-  <div class="bg-red-400 rounded-md h-[40vh]">
-    <a class="text-center text-white text-2xl" href="./projects/other-work">Other Work</a>
-  </div>
-  <div class="bg-red-100 rounded-md h-[40vh]">
-    <a class="text-center text-white text-2xl" href="./projects/brand-archetype-experience">Brand Archetype Experience</a>
-  </div>
-  <div class="bg-red-200 rounded-md h-[40vh]">
-    <a class="text-center text-white text-2xl" href="./projects/smartstaff-app">Smartstaff App</a>
-  </div>
+  {% projectCard "./projects/smartstaff-app", "Smartstaff App Design | UI/UX", "Smartstaff App" %}
+  {% projectCard "./projects/smartstaff-branding", "Smartstaff Branding" %}
+  {% projectCard "./projects/mecha-systems", "Mecha Systems" %}
+  {% projectCard "./projects/international-tennis-hall-of-fame", "International Tennis Hall Of Fame", "ITHF" %}
+  {% projectCard "./projects/caicos-luxe", "Caicos Luxe" %}
+  {% projectCard "./projects/metaverse-infosys", "Metaverse x Infosys", "Metaverse Infosys" %}
+  {% projectCard "./projects/google-mumbai", "Google Space Design", "Google Mumbai" %}
+  {% projectCard "./projects/brand-archetype-experience", "Brand Archetype Experience" %}
+  {% projectCard "./projects/logofolio", "Logofolio" %}
+  {% projectCard "./projects/other-work", "Other Commerical / Personal Work", "Other Work" %}
 </section>

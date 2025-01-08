@@ -3,6 +3,7 @@ export default {
   content: [
     "./content/**/*.{html,md,njk,ejs,pug}",
     "./_includes/**/*.{html,md,njk,ejs,pug}",
+    "./eleventy.config.js",
   ],
   theme: {
     extend: {
