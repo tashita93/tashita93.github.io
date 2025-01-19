@@ -3,35 +3,50 @@ layout: layout/main-layout.njk
 title: Tashita Mukherji
 description: Portfolio of Tashita Mukherji
 mainTitle: A MULTI-DISCIPLINARY DESIGNER AND ILLUSTRATOR
-subtitle: <b>Tashita Mukherji</b> is a brand and product designer creating identities with beauty and brains for companies large and small.
-scrollNote: Scroll for projects on this website
+subtitle: <b>Tashita</b> is a brand and product designer who believes great design begins with a story. 
+scrollNote: Scroll for projects
 ---
 
 <section class="h-screen container mx-auto flex flex-col text-brand-300 selection:bg-brand-300 selection:text-[#1a1a1a]">
-  <section class="grow flex flex-col md:flex-row justify-evenly md:justify-between items-center">
-    <div class="px-2 md:w-4/5">
-      <p class="text-3xl md:text-7xl font-black text-center">
-        {{ mainTitle }}
+  <section class="grow hidden lg:flex flex-row justify-center items-center pb-72">
+    <div class="px-12">
+      <p class="lg:text-[4.5vw] xl:text-[3.5vw] font-black leading-none">
+        A MULTI-DISCIPLINARY DESIGNER
       </p>
-      <div class="flex flex-col md:flex-row justify-start">
-        <div class="px-12 mt-6">
-          <p class="text-md md:text-2xl text-center font-normal">
+      <div class="flex flex-row justify-start items-center">
+        <p class="lg:text-[4.5vw] xl:text-[3.5vw] font-black leading-none">
+          AND ILLUSTRATOR
+        </p>
+        <div class="w-2/5 px-4">
+          <p class="lg:text-[1.4vw] xl:text-[1.35vw] font-normal xl:font-light text-pretty leading-tight">
             {{ subtitle | safe }}
           </p>
         </div>
       </div>
     </div>
-    <img src="./shopping-bag.svg" class="hidden absolute -right-10 bottom-2 h-[55vh] w-[55vh]"/>
-    <a class="relative h-48 w-48 select-none" href="#projects">
-      <img src="./star.png" class="absolute h-48 w-48 animate-spin-slow"/>
-      <div class="text-white text-center absolute w-32 top-14 left-8 text-sm">
-        <p>{{ scrollNote }}</p>
-        <img src="./arrow.svg" class="mx-auto h-12"/>
+  </section>
+  <section class="grow flex lg:hidden flex-col lg:flex-row justify-start items-center pt-20">
+    <div class="px-2 flex flex-col items-center justify-center">
+      <p class="text-4xl md:text-6xl text-center font-black leading-none w-fit mb-5">
+        A MULTI-DISCIPLINARY DESIGNER AND ILLUSTRATOR
+      </p>
+      <div class="px-4 sm:w-3/5">
+        <p class="font-normal md:text-2xl text-pretty leading-tight text-center">
+          {{ subtitle | safe }}
+        </p>
       </div>
     </div>
   </section>
+  <img src="./shopping-bag.png" class="hidden xs:block absolute right-0 bottom-32 h-[40vh] lg:h-[50vh] "/>
+  <a class="absolute h-48 w-48 select-none right-2 bottom-2 xs:right-8 xs:bottom-8" href="#projects">
+    <img src="./star.png" class="absolute h-48 w-48 animate-spin-slow"/>
+    <div class="text-white text-center absolute w-32 top-14 left-8 text-xl leading-none">
+      <p>{{ scrollNote }}</p>
+      <img src="./arrow.svg" class="mx-auto mt-6 h-6"/>
+    </div>
+  </div>
 </section>
-<section class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 p-2" id="projects">
+<section class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 p-2 auto-rows-max" id="projects">
   {% projectCard "./projects/smartstaff-app", "Smartstaff App Design | UI/UX", "Smartstaff App" %}
   {% projectCard "./projects/smartstaff-branding", "Smartstaff Branding" %}
   {% projectCard "./projects/mecha-systems", "Mecha Systems" %}

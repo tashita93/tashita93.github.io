@@ -1,2 +1,5 @@
 node_modules/
 _site
+_includes/css/global.out.css
+.DS_Store
+./public/.DS_Store

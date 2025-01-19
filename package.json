@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "tailwindcss -i ./_includes/css/global.css -o global.out.css --watch",
-    "build": "rimraf _site && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./_includes/css/global.css -o global.out.css --minify"
+    "css": "tailwindcss -i ./_includes/css/global.css -o ./_includes/css/global.out.css --watch",
+    "build": "rimraf _site && ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i ./_includes/css/global.css -o ./_includes/css/global.out.css --minify"
   },
   "author": "",
   "license": "ISC",

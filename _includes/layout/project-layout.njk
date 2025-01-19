@@ -2,10 +2,10 @@
 layout: layout/main-layout.njk
 ---
 
-<section class="container mx-auto flex flex-col text-white selection:bg-white">
+<section id="content" class="container mx-auto flex flex-col text-white selection:bg-white">
   <section class="flex flex-col md:flex-row justify-center md:justify-between items-center py-24">
     <div class="px-2">
-      <p class="text-4xl md:text-6xl font-black text-center md:text-left">
+      <p class="text-4xl md:text-6xl font-black text-center md:text-left 2xl:text-7xl">
         {{ projectTitle }}
       </p>
       <div class="flex flex-col justify-start px-6 md:px-0 text-md md:text-xl text-center font-light md:text-left md:w-3/5
@@ -37,7 +37,7 @@ layout: layout/main-layout.njk
         </div>
       {% endfor %}
     </section>
-    <section class="flex flex-row justify-center p-2">
+    <section class="flex flex-row justify-center p-2 mt-8">
       <div class="px-2">
         <a href="{{ previousPage }}">
           <img src="/arrow-left.svg" alt="Previous" class="inline mx-4"/>PREVIOUS

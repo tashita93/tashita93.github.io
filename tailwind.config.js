@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "376px",
+      },
       fontFamily: {
         sans: [
           "PowerGrotesk",
