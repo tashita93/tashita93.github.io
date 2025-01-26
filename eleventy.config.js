@@ -32,10 +32,7 @@ export default async function (eleventyConfig) {
          offset * 25
        }">
         <a class="block w-full h-full" href="${url}">
-          <img src="${mobileImagePath}" alt="${title}" class="w-full h-full object-cover rounded-md transition-opacity duration-300 group-hover:opacity-50"/>
-          <div class="absolute inset-0 flex items-center justify-center p-4 bg-brand-300 bg-opacity-95 text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 uppercase font-bold">
-            ${title}
-          </div>
+          <img src="${mobileImagePath}" alt="${title}" class="w-full h-full object-cover rounded-md transition-opacity duration-300"/>
         </a>
       </div>
     `;
