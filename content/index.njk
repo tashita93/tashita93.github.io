@@ -38,12 +38,11 @@ scrollNote: Scroll for projects
     </div>
   </section>
   <img src="./shopping-bag.png" class="hidden xs:block absolute right-0 bottom-32 h-[40vh] lg:h-[50vh] "/>
-  <a class="absolute h-48 w-48 select-none right-2 bottom-2 xs:right-8 xs:bottom-8" href="#projects">
+  <div class="absolute h-48 w-48 select-none right-2 bottom-2 xs:right-8 xs:bottom-8">
     <img src="./star.png" class="absolute h-48 w-48 animate-spin-slow"/>
-    <div class="text-white text-center absolute w-32 top-14 left-8 text-xl leading-none">
-      <p>{{ scrollNote }}</p>
-      <img src="./arrow.svg" class="mx-auto mt-6 h-6"/>
-    </div>
+    <a class="text-white text-center absolute w-32 top-14 left-8 text-xl leading-none" href="#projects">
+      {{ scrollNote }} <img src="./arrow.svg" class="mx-auto mt-6 h-6"/>
+    </a>
   </div>
 </section>
 <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 p-2 auto-rows-max" id="projects">

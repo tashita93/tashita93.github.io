@@ -40,3 +40,14 @@ window.addEventListener("pagereveal", async (e) => {
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.getElementById("burger");
+  const burgerMenu = document.getElementById("burger-menu");
+
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("open");
+    burgerMenu.classList.toggle("open");
+    document.body.classList.toggle("overflow-hidden");
+  });
+});
