@@ -28,6 +28,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          echo "www.tashitamukherji.com" > _site/CNAME
           git add -f _site
           git commit -m "Deploy to release branch"
           git push origin `git subtree split --prefix _site main`:refs/heads/release --force
