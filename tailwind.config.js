@@ -1,10 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./content/**/*.{html,md,njk,ejs,pug}",
-    "./_includes/**/*.{html,md,njk,ejs,pug}",
-    "./eleventy.config.js",
-  ],
+  content: {
+    relative: true,
+    transform: (content) => content.replace(/taos:/g, ""),
+    files: [
+      "./content/**/*.{html,md,njk,ejs,pug}",
+      "./_includes/**/*.{html,md,njk,ejs,pug}",
+      "./eleventy.config.js",
+    ],
+  },
   theme: {
     extend: {
       screens: {
@@ -41,5 +45,11 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("taos/plugin")],
+  safelist: [
+    "!duration-[0ms]",
+    "!delay-[0ms]",
+    'html.js :where([class*="taos:"]:not(.taos-init))',
+    { pattern: /duration-/ },
+  ],
 };

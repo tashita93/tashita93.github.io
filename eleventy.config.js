@@ -16,14 +16,19 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addShortcode(
     "projectCard",
-    function (url, title, imageName = null) {
-      const imagePath = imageName
-        ? `./Projects/${imageName}.png`
-        : `./Projects/${title}.png`;
+    function (url, title, imagePath, mobileImagePath) {
       return `
-      <div class="relative bg-brand-900 rounded-md h-[40vh] md:h-[50vh] overflow-hidden group">
+      <div class="hidden md:block relative bg-brand-900 rounded-md h-[40vh] md:h-[50vh] overflow-hidden group">
         <a class="block w-full h-full" href="${url}">
           <img src="${imagePath}" alt="${title}" class="w-full h-full object-cover rounded-md transition-opacity duration-300 group-hover:opacity-50"/>
+          <div class="absolute inset-0 flex items-center justify-center p-4 bg-brand-300 bg-opacity-95 text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 uppercase font-bold">
+            ${title}
+          </div>
+        </a>
+      </div>
+       <div class="block md:hidden relative bg-brand-900 rounded-md h-[40vh] md:h-[50vh] overflow-hidden group">
+        <a class="block w-full h-full" href="${url}">
+          <img src="${mobileImagePath}" alt="${title}" class="w-full h-full object-cover rounded-md transition-opacity duration-300 group-hover:opacity-50"/>
           <div class="absolute inset-0 flex items-center justify-center p-4 bg-brand-300 bg-opacity-95 text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 uppercase font-bold">
             ${title}
           </div>
