@@ -914,6 +914,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   background-color: rgb(116 19 152 / var(--tw-bg-opacity, 1));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
+}
+
 .bg-opacity-95 {
   --tw-bg-opacity: 0.95;
 }
