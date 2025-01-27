@@ -666,6 +666,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   z-index: 30;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
@@ -925,6 +929,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .fill-current {
