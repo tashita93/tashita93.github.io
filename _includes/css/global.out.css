@@ -749,10 +749,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   height: 1.5rem;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
 .h-\[40vh\] {
   height: 40vh;
 }
@@ -763,6 +759,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .min-h-screen {
@@ -779,10 +779,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .w-48 {
   width: 12rem;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .w-fit {
@@ -914,11 +910,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   background-color: rgb(116 19 152 / var(--tw-bg-opacity, 1));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
-}
-
 .bg-opacity-95 {
   --tw-bg-opacity: 0.95;
 }
@@ -995,6 +986,14 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pb-\[56\.25\%\] {
+  padding-bottom: 56.25%;
+}
+
+.pt-\[25px\] {
+  padding-top: 25px;
 }
 
 .text-center {
@@ -1074,41 +1073,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .opacity-0 {
   opacity: 0;
-}
-
-.brightness-50 {
-  --tw-brightness: brightness(.5);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.brightness-\[10\] {
-  --tw-brightness: brightness(10);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.brightness-\[20\] {
-  --tw-brightness: brightness(20);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.brightness-\[0\.1\] {
-  --tw-brightness: brightness(0.1);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.brightness-\[0\.5\] {
-  --tw-brightness: brightness(0.5);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.brightness-\[0\.3\] {
-  --tw-brightness: brightness(0.3);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.brightness-\[0\.2\] {
-  --tw-brightness: brightness(0.2);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .brightness-\[0\.25\] {
@@ -1579,11 +1543,6 @@ html:active-view-transition-type(reload) {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.hover\:saturate-200:hover {
-  --tw-saturate: saturate(2);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .group:hover .group-hover\:opacity-100 {

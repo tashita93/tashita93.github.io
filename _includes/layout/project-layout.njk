@@ -32,9 +32,15 @@ layout: layout/main-layout.njk
     </section>
     <section class="grid grid-cols-12 gap-2 p-2">
       {% for item in media %}
-        <div class="{{ item.classes }} duration-[300ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="{{ (loop.index * 10) }}">
-          <img src="{{ baseAssetsPath }}/{{ item.src }}" alt="{{ item.alt }}" class="w-full"/>
-        </div>
+        {% if item.type == 'youtube' %}
+          <div class="{{ item.classes }} relative pb-[56.25%] w-full h-0 ">
+            <iframe width="849" height="478" src="{{ item.src }}" title="{{ item.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
+          </div>
+        {% else %}
+          <div class="{{ item.classes }} duration-[300ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="{{ (loop.index * 10) }}">
+            <img src="{{ baseAssetsPath }}/{{ item.src }}" alt="{{ item.alt }}" class="w-full"/>
+          </div>
+        {% endif %}
       {% endfor %}
     </section>
     <section class="flex flex-row justify-center p-2 mt-8">
