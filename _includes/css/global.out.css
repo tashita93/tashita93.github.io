@@ -670,6 +670,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   z-index: 40;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
