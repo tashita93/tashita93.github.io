@@ -31,8 +31,10 @@ export default async function (eleventyConfig) {
        <div class="block md:hidden relative bg-brand-900 rounded-md h-[40vh] md:h-[50vh] overflow-hidden group duration-[300ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="${
          offset * 25
        }">
-        <a class="block w-full h-full" href="${url}">
-          <img src="${mobileImagePath}" alt="${title}" class="w-full h-full object-cover rounded-md transition-opacity duration-300"/>
+        <a class="block relative w-full h-full bg-cover" href="${url}" style="background-image: url('${imagePath}');">
+          <div class="absolute h-12 bottom-0 left-0 right-0 flex items-center justify-center p-4 bg-brand-300 text-white uppercase font-bold text-center">
+            ${title}
+          </div>
         </a>
       </div>
     `;

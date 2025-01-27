@@ -650,6 +650,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   top: 3.5rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -912,6 +916,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .bg-opacity-95 {
   --tw-bg-opacity: 0.95;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .fill-current {
